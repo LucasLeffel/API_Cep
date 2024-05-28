@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Tarefa API</title>
+</head>
+<body>
+    <h1> CONSULTAR CEP </h1>
+    <div class="container">
+       <input class="cep" type="text" name="cep" id="cep" placeholder="digite seu cep">
+        <button class="consultar" onclick="consultaCep()">Consultar</button>
+    </div>
+
+    <div class="campos">
+        Rua: <input type="text" name="rua" id="rua" readonly> <br>
+        Bairro: <input type="text" name="bairro" id="bairro" readonly> <br>
+        Complemento: <input type="text" name="complemento" id="complemento" readonly> <br>
+        Localidade: <input type="text" name="localidade" id="localidade" readonly> <br>
+        UF: <input type="text" name="uf" id="uf" readonly> <br>
+        IBGE: <input type="text" name="ibge" id="ibge" readonly> 
+     </div>
+
+     <div>
+        <Button class="salvar" onclick="salvarDados()" id="botao">Salvar</Button>
+     </div>
+
+     <div>
+        <table id="table">
+
+        </table>
+     </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>    
+    <script src="app.js"></script>    
+</body>
+</html>
